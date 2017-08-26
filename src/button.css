@@ -1,0 +1,13 @@
+.rverbio-button.rverbio-button__feedback {
+    position: fixed;
+    right: 0;
+    top: 66%;
+    transform: rotate(-90deg) translate(0, 100%);
+    background-color: #008cba;
+    color: white;
+}
+
+.rverbio-button.rverbio-button__feedback:active {
+  background-color: #006687;
+}
+
