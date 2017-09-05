@@ -1,6 +1,6 @@
 {
   "name": "rverbio",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript based SDK for rverb.io feedback",
   "main": "dist/rverbio.js",
   "scripts": {
@@ -20,28 +20,27 @@
   },
   "author": "rverbio",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.16.2",
-    "core-js": "^2.5.1",
-    "html2canvas": "^0.5.0-beta4",
-    "ua-parser-js": "^0.7.14"
-  },
+  "dependencies": {},
   "devDependencies": {
     "assert": "^1.4.1",
+    "axios": "^0.16.2",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
+    "core-js": "^2.5.1",
     "css-loader": "^0.28.5",
     "eslint": "^4.1.1",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.6.1",
     "expose-loader": "^0.7.3",
+    "html2canvas": "^0.5.0-beta4",
     "loglevel": "^1.4.1",
     "mocha": "^3.5.0",
     "style-loader": "^0.18.2",
+    "ua-parser-js": "^0.7.14",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.6.0",
     "webpack-notifier": "^1.5.0"

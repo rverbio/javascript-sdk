@@ -5,5 +5,6 @@ test/
 .editorconfig
 .eslintrc
 .gitattributes
+.travis.yml
 webpack.config.babel.js
 

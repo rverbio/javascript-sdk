@@ -4,6 +4,7 @@ node_js:
 before_script: npm test
 script: npm run build:production
 deploy:
+  skip_cleanup: true
   provider: npm
   email: $NPM_EMAIL
   api_key: $NPM_KEY
