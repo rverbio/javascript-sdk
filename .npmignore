@@ -1,5 +1,6 @@
 index.html
 src/
+test/
 .babelrc
 .editorconfig
 .eslintrc
