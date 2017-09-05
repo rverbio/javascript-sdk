@@ -1,4 +1,4 @@
-import html2canvas from 'html2canvas';
+import html2canvas from 'html2canvas'; // eslint-disable-line
 import './form.css';
 import validation from './validation';
 

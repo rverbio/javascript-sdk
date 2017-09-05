@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'; // eslint-disable-line
 
 export default class Api {
   constructor({ apiKey }) {

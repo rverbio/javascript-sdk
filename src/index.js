@@ -1,7 +1,7 @@
+/*eslint-disable */
 require('core-js/es6/object');
 require('core-js/es6/promise');
 
-/*eslint-disable */
 // Node List Pollyfill
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = function (callback, thisArg) {

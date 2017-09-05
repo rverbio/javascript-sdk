@@ -1,4 +1,4 @@
-import UAParser from 'ua-parser-js';
+import UAParser from 'ua-parser-js'; // eslint-disable-line
 import Api from './api';
 import EndUser from './enduser';
 import Sessions from './sessions';
