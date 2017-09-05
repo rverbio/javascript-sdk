@@ -2,10 +2,10 @@
   "name": "rverbio",
   "version": "0.0.1",
   "description": "Javascript based SDK for rverb.io feedback",
-  "main": "src/index.js",
+  "main": "dist/rverbio.js",
   "scripts": {
-    "build": "webpack --progress --colors --hide-modules",
-    "build:production": "webpack -p --hide-modules",
+    "build": "webpack --output-library-target umd --hide-modules",
+    "build:production": "webpack -p --output-library-target umd --hide-modules",
     "test": "mocha --require babel-register",
     "watch": "webpack-dev-server --progress --colors --watch --compress --open"
   },
@@ -14,10 +14,15 @@
     "rverb.io",
     "rverbio"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rverbio/javascript-sdk.git"
+  },
   "author": "rverbio",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.16.2",
+    "core-js": "^2.5.1",
     "html2canvas": "^0.5.0-beta4",
     "ua-parser-js": "^0.7.14"
   },

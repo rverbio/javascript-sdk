@@ -4,7 +4,7 @@ export default class Api {
   constructor({ apiKey }) {
     this.scopedApi = axios.create({
       // eslint-disable-next-line
-      baseURL: rverbio_api_url || 'https://rverb.io',
+      baseURL: window.rverbio_api_url || 'https://rverb.io',
       headers: {
         ApiKey: apiKey,
       },
