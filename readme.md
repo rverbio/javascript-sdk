@@ -19,10 +19,10 @@ If you need to retrieve your API Key later, simply log into https://rverb.io and
 ## Installation
 
 **Browser**
-TODO CDN
+`<script src="//unpkg.com/rverbio@0.0.3/dist/rverbio.js" />`
 
 **npm**
-TODO LTP
+`npm install rverbio`
 
 ## Usage
 
