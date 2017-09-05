@@ -1,14 +1,12 @@
-import webpack from 'webpack';
 import path from 'path';
 import WebpackNotifierPlugin from 'webpack-notifier';
 
-const production = process.argv.indexOf('-p') !== -1;
+const isUmd = process.argv.indexOf('umd') !== -1;
 
 const plugins = [
-  new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 ];
 
-if (!production) {
+if (!isUmd) {
   plugins.push(
     new WebpackNotifierPlugin({
       excludeWarnings: true,
@@ -28,8 +26,9 @@ export default {
   },
   output: {
     filename: '[name].js',
-    publicPath: '/assets/',
-    path: path.join(__dirname, '/assets/'),
+    publicPath: isUmd ? '/dist/' : '/assets/',
+    path: isUmd ? path.join(__dirname, '/dist/') : path.join(__dirname, '/assets/'),
+    library: 'rverbio',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
