@@ -1,6 +1,6 @@
 {
   "name": "rverbio",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Javascript based SDK for rverb.io feedback",
   "main": "dist/rverbio.js",
   "scripts": {

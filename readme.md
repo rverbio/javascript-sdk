@@ -19,7 +19,7 @@ If you need to retrieve your API Key later, simply log into https://rverb.io and
 ## Installation
 
 **Browser**
-`<script src="//unpkg.com/rverbio@0.0.3/dist/rverbio.js"></script>`
+`<script src="//unpkg.com/rverbio@latest/dist/rverbio.js"></script>`
 
 **npm**
 `npm install rverbio`
