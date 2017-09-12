@@ -220,10 +220,16 @@ const mountForm = (appName, className, rverbio) => {
 
 const openForm = (shouldTakeScreenShot) => {
   const modal = document.getElementById('rverbio-modal');
+  const button = document.querySelector('.rverbio-button.rverbio-button__feedback');
+
   if (modal) {
     modal.querySelectorAll('.rverbio-modal--surface--body--screenshot *').forEach((element) => {
       element.remove();
     });
+
+    if (button) {
+      button.classList.add('loading');
+    }
 
     const task = shouldTakeScreenShot ? html2canvas(document.body, { background: '#fff' }).then((canvas) => {
       canvas.toBlob((blob) => {
@@ -240,6 +246,10 @@ const openForm = (shouldTakeScreenShot) => {
       modal.querySelector('.rverbio-modal--backdrop').style.opacity = '.3';
       modal.querySelector('.rverbio-modal--surface').style.transform = 'translateY(0) scale(1)';
       modal.querySelector('.rverbio-modal--surface').style.opacity = 1;
+
+      if (button) {
+        button.classList.remove('loading');
+      }
     });
   } else {
     // eslint-disable-next-line
