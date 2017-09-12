@@ -49,8 +49,8 @@
 .rverbio-modal--surface--header--title {
     flex: 1;
     margin: 0;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 20px;
+    line-height: 32px;
     letter-spacing: .02rem;
     margin: -.5rem 0 1rem -.05em;
     font-weight: 500;
@@ -61,8 +61,8 @@
     margin-top: 20px;
     padding: 0 24px;
     color: rgba(0, 0, 0, .54);
-    font-size: .875rem;
-    line-height: 1.25rem;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 500;
     letter-spacing: .04em;
     margin: -.25rem 0 .75rem 0;
@@ -74,6 +74,7 @@
   display: block;
   color: #008cba;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .rverbio-modal--surface--body textarea,
@@ -86,6 +87,7 @@
   border-radius: 2px;
   color: inherit;
   font: inherit;
+  box-sizing: border-box;
 }
 
 .rverbio-modal--surface--body--validation {
@@ -93,11 +95,12 @@
   font: inherit;
   font-size: 12px;
   display: block;
+  position: absolute;
   color: red;
 }
 
 .rverbio-modal--surface--body--wrapper {
-  margin-top: 45px;
+  margin-top: 25px;
   box-sizing: border-box;
 }
 
